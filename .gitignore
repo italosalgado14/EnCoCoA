@@ -1,0 +1,61 @@
+# Python bytecode and packaging
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg
+*.egg-info/
+.eggs/
+MANIFEST
+
+# Test, type, and lint caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# uv / virtual environments
+.venv/
+venv/
+env/
+
+# Build artifacts
+build/
+dist/
+*.whl
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local environment files / secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Local Claude Code state (project-level config under .claude/ stays tracked)
+.claude/settings.local.json
+
+# EnCoCoA runtime artifacts (recordings, transcripts, reports)
+*.wav
+*.transcript.json
+*.transcript.md
+*.diarization.json
+*.dialog.json
+*.report.md
+sessions/
+models/
+
+# Keep checked-in regression fixtures even if they match patterns above
+!tests/data/
+!tests/data/**
